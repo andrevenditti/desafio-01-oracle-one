@@ -1,0 +1,143 @@
+@import url(../styles/global.css);
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--gray-800);
+    padding: 40px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 120px 2fr 1fr;
+    gap: 48px;
+
+    width: 100%;
+    max-width: 1360px;
+    height: 100%;
+
+    padding: 40px;
+    margin: 0 auto;
+
+    background-color: var(--gray-900);
+    border-radius: 8px;
+    box-shadow: 0 0 12px 8px rgba(0, 0, 0, 0.144);
+}
+
+.header {
+    grid-column: 1/2;
+    text-align: center;
+}
+
+.main {
+    grid-column: 2/3;
+    margin-top: 15%;
+}
+
+.main__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.main__form textarea {
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+    resize: none;
+    
+    background-color: var(--gray-800);
+    color: var(--gray-100);
+    font-size: 24px;
+
+    border: 0;
+    border-radius: 8px;
+
+    padding: 10px;
+}
+
+.main__form textarea::placeholder {
+    color: var(--dark-red-100);
+}
+
+.main__button-area {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 32px;
+}
+
+.result__message {
+    grid-column: 4/3;
+    background-color: var(--gray-800);
+    border-radius: 8px;
+    padding: 32px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    box-shadow: 0 8px 4px 0 rgba(0, 0, 0, 0.245);
+}
+
+.result__message-empty {
+    display: block;
+}
+
+.result__message-empty img {
+    width: 100%;
+}
+
+.result__message-text {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 16px;
+    height: 100%;
+}
+
+@media (max-width: 768px) {
+    body {
+        height: 100%;
+    }
+    .container {
+        grid-template-columns: 1fr;
+    }   
+    .header {
+        grid-column: 1;
+        text-align: start;
+    }
+
+    .main {
+        grid-column: 1;
+        margin-top: 0;
+    }
+
+    .main__form textarea {
+        margin-bottom: 120px;
+    }
+
+    .result__message {
+        grid-column: 1;
+    }
+
+    .result__message-empty {
+        text-align: center;
+    }
+    
+    .result__message-empty img {
+        display: none;
+    }
+}
+
+@media (max-width: 375px) {
+    .container {
+        padding: 16px;
+    }
+    .main__button-area {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        /* margin-bottom: 32px; */
+    }
+}

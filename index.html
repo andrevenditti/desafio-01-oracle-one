@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/logo.png" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>aenigma</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <img class="header__image" src="./assets/logo.png" alt="" />
+      </header>
+      <main class="main">
+        <form class="main__form">
+          <textarea
+            name="textarea"
+            id="textarea"
+            cols="30"
+            rows="10"
+            placeholder="Digite seu texto"
+          ></textarea>
+          <footer class="main__footer">
+            <span class="main__callout"
+              >Apenas letras minúsculas e sem acento.</span
+            >
+            <div class="main__button-area">
+              <button type="submit" class="btn btn-primary btn-encrypt">
+                Criptografar
+              </button>
+              <button type="submit" class="btn btn-secondary btn-decrypt">
+                Descriptografar
+              </button>
+            </div>
+          </footer>
+        </form>
+      </main>
+      <section class="result__message">
+        <div class="result__message-empty">
+          <img src="./assets/contentNotFound.svg" alt="" />
+          <h3>Nenhuma mensagem encontrada</h3>
+          <p>
+            Digite um texto que você deseja criptografar ou descriptografar.
+          </p>
+        </div>
+        <div class="result__message-text">
+          <p></p>
+          <button class="btn btn-secondary btn-copy">Copiar</button>
+        </div>
+      </section>
+    </div>
+    <script src="./src/index.js"></script>
+  </body>
+</html>

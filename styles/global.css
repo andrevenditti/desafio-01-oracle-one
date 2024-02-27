@@ -1,0 +1,73 @@
+:root {
+  --dark-red-500: #73111B;
+  --dark-red-400: #951525;
+  --dark-red-300: #B52231;
+  --dark-red-200: #D23741;
+  --dark-red-100: #EA5055;
+
+  --light-red-500: #FC6D6C;
+  --light-red-400: #FFACA6;
+  --light-red-300: #FFCDC8;
+  --light-red-200: #FFEEEC;
+  --light-red-100: #FFF8F7;
+
+  --gray-900: #181818;
+  --gray-800: #262624;
+  --gray-500: #3A3939;
+  --gray-200: #D4D4D4;
+  --gray-100: #EBEBE9;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: var(--gray-100);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: inherit;
+}
+
+p, textarea, input, button {
+  font-family: inherit;
+}
+
+.btn {
+  all: unset;
+  cursor: pointer;
+
+  padding: 24px 0;
+  width: 100%;
+  max-width: 328px;
+
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+
+  border-radius: 24px;
+
+  transition: 0.1s ease-in-out background;
+}
+
+.btn-primary {
+  background-color: var(--dark-red-400);
+}
+
+.btn-primary:hover {
+  background-color: var(--dark-red-500);
+}
+
+.btn-secondary {
+  background-color: var(--light-red-100);
+  border: 1px solid var(--dark-red-400);
+  color: var(--dark-red-400);
+}
+
+.btn-secondary:hover {
+  background-color: var(--light-red-200);
+}
