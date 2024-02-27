@@ -27,7 +27,7 @@ porém este, só é encontrado no momento em que é utilizada uma das funcionali
 
 ## 📁 Acesso ao projeto
 
-[Veja o projeto final do curso em funcionamento](https://github.com/andrevenditti).
+[Veja o projeto final do curso em funcionamento](https://desafio-01-oracle-one.vercel.app/).
 
 Neste repositório você tem acesso a todo o material produzido no curso.
 
